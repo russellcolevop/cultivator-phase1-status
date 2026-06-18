@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cultivator x Russell Cole — Phase 1 Status</title>
+<style>
+  :root{
+    --bg:#0f1419; --panel:#171d26; --panel-2:#1d2530; --line:#283140;
+    --text:#e7ecf2; --muted:#93a0b1; --accent:#4ea1ff; --green:#3fb950;
+    --amber:#d29922; --grey:#5a6675;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.55;padding:32px 20px}
+  .wrap{max-width:920px;margin:0 auto}
+  header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:28px}
+  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  h1{font-size:26px;font-weight:650;letter-spacing:-.01em}
+  .sub{color:var(--muted);font-size:14px;margin-top:6px}
+  .pill{display:inline-block;font-size:12px;font-weight:600;padding:5px 11px;border-radius:999px;
+    background:rgba(210,153,34,.15);color:var(--amber);border:1px solid rgba(210,153,34,.35)}
+  .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;align-items:center}
+  .meta .updated{font-size:12px;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:30px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .card .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .card .v{font-size:17px;font-weight:600;margin-top:5px}
+  section{margin-bottom:32px}
+  h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+    margin-bottom:14px;font-weight:600}
+  .steps{list-style:none}
+  .step{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+  .step:last-child{border-bottom:none}
+  .dot{flex:none;width:18px;height:18px;border-radius:50%;margin-top:3px;border:2px solid var(--grey)}
+  .step.done .dot{background:var(--green);border-color:var(--green)}
+  .step.active .dot{border-color:var(--accent);background:rgba(78,161,255,.25)}
+  .step .label{font-weight:550}
+  .step .note{color:var(--muted);font-size:13px;margin-top:2px}
+  .tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:5px;margin-left:auto;flex:none}
+  .tag.done{background:rgba(63,185,80,.15);color:var(--green)}
+  .tag.active{background:rgba(78,161,255,.15);color:var(--accent)}
+  .tag.wait{background:rgba(90,102,117,.2);color:var(--muted)}
+  .list{list-style:none}
+  .list li{padding:8px 0 8px 22px;position:relative;border-bottom:1px solid var(--line);font-size:14px}
+  .list li:last-child{border-bottom:none}
+  .list li:before{content:"";position:absolute;left:4px;top:15px;width:6px;height:6px;
+    border-radius:50%;background:var(--accent)}
+  .need li:before{background:var(--amber)}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+  td.range{color:var(--muted);white-space:nowrap}
+  .panel-box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:18px;margin-top:10px}
+  @media(max-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Engagement Status Page</div>
+    <h1>Cultivator Airtable — Phase 1</h1>
+    <div class="sub">System Review &amp; Stabilization Plan · Cultivator / Conexus + Russell Cole</div>
+    <div class="meta">
+      <span class="pill" style="background:rgba(63,185,80,.15);color:var(--green);border-color:rgba(63,185,80,.35)">Kicked off — review begins when the deposit lands</span>
+      <span class="updated">Last updated: June 18, 2026</span>
+    </div>
+  </header>
+
+  <div class="grid">
+    <div class="card"><div class="k">Phase</div><div class="v">1 of 2</div></div>
+    <div class="card"><div class="k">Fixed Fee</div><div class="v">CAD $4,500</div></div>
+    <div class="card"><div class="k">Timeline</div><div class="v">4–6 days</div></div>
+    <div class="card"><div class="k">Next Step</div><div class="v">Deposit + kickoff</div></div>
+  </div>
+
+  <section>
+    <h2>Where things stand</h2>
+    <ul class="steps">
+      <li class="step done">
+        <span class="dot"></span>
+        <div><div class="label">Discovery call</div><div class="note">Walked through dashboards, forms, automations, and HubSpot sync.</div></div>
+        <span class="tag done">Done</span>
+      </li>
+      <li class="step done">
+        <span class="dot"></span>
+        <div><div class="label">Proposal &amp; SOW sent</div><div class="note">Phase 1 scope, fee, and Phase 2 planning shared.</div></div>
+        <span class="tag done">Done</span>
+      </li>
+      <li class="step done">
+        <span class="dot"></span>
+        <div><div class="label">Sign SOW + confidentiality agreement</div><div class="note">Both documents executed by Cultivator and Russell.</div></div>
+        <span class="tag done">Done</span>
+      </li>
+      <li class="step active">
+        <span class="dot"></span>
+        <div><div class="label">Deposit &amp; access setup</div><div class="note">Read-only Airtable token and HubSpot view-only access set up. Deposit with finance; review begins on receipt.</div></div>
+        <span class="tag active">In progress</span>
+      </li>
+      <li class="step">
+        <span class="dot"></span>
+        <div><div class="label">Phase 1 review</div><div class="note">4–6 business days from NDA and access.</div></div>
+        <span class="tag wait">Pending</span>
+      </li>
+      <li class="step">
+        <span class="dot"></span>
+        <div><div class="label">Deliverables &amp; Phase 2 scope</div><div class="note">Review summary, rebuild-vs-modify call, firm Phase 2 numbers.</div></div>
+        <span class="tag wait">Pending</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Decisions from the kickoff (June 18)</h2>
+    <ul class="list">
+      <li>Top priority: KPI dashboards and submissions working properly in Airtable, with clean reporting.</li>
+      <li>Dashboards and reporting stay in Airtable. HubSpot dashboarding is off the table (it would need an account per startup).</li>
+      <li>HubSpot sync stays in Phase 1 as a low priority — I'll handle what I can efficiently rather than defer it.</li>
+      <li>Cultivator is the base in scope; access is read-only across Airtable and HubSpot.</li>
+      <li>The two later-stage companies get onboarded after the system is stabilized.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What I'll be reviewing in Phase 1</h2>
+    <ul class="list">
+      <li>Company-specific KPI forms, submissions, and startup dashboards (top priority)</li>
+      <li>Base structure, tables, fields, views, forms, interfaces, and dashboards</li>
+      <li>Dashboard permissions and visibility (who sees what)</li>
+      <li>Slack and email notification / reminder automations</li>
+      <li>The new-company onboarding process and the BOMS issue</li>
+      <li>HubSpot sync for website submissions and program applications (low priority)</li>
+      <li>Existing documentation (incl. your Notion guide), plus areas safe to retire or simplify</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What I need from you</h2>
+    <ul class="list need">
+      <li>The Notion setup / onboarding guide you're sharing</li>
+      <li>Your calendar booking link, for quick check-ins</li>
+      <li>A quick email if any simple, safe fix comes to mind to fold in</li>
+      <li class="muted-note" style="color:var(--muted)">Access, base scope, and Phase 2 sign-off were all confirmed on the call.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Two new companies (confirmed — after stabilization)</h2>
+    <div class="panel-box">
+      Two later-stage companies still need onboarding, and the goal is to get them on soon. Since the
+      onboarding process is currently unreliable, we stabilize the system first, then bring them on
+      cleanly. They can backfill their KPIs once it's working. If a simple, safe fix surfaces along the
+      way I'll flag it; larger onboarding work is handled as ad hoc at CAD $175/hour with approval.
+    </div>
+  </section>
+
+  <section>
+    <h2>Phase 2 preview (scoped firmly after Phase 1)</h2>
+    <table>
+      <thead><tr><th>Workstream</th><th>Directional range</th></tr></thead>
+      <tbody>
+        <tr><td>Standardized later-stage onboarding</td><td class="range">$4,000–$6,000</td></tr>
+        <tr><td>Permissions remediation</td><td class="range">$2,000–$3,500</td></tr>
+        <tr><td>Reminder / notification automations</td><td class="range">$1,500–$3,000</td></tr>
+        <tr><td>Dashboard consistency &amp; cleanup</td><td class="range">$2,000–$3,500</td></tr>
+        <tr><td>HubSpot sync remap</td><td class="range">$2,500–$4,500</td></tr>
+        <tr><td>Feedback form patterns &amp; reporting</td><td class="range">$1,000–$2,000</td></tr>
+        <tr><td>Documentation &amp; handoff</td><td class="range">$1,000–$2,000</td></tr>
+      </tbody>
+    </table>
+    <p style="color:var(--muted);font-size:12.5px;margin-top:12px">
+      Directional planning only. A full build of every workstream is approximately CAD $14,000–$24,500
+      before a 10–15% contingency. The priority workstreams make up roughly CAD $12,000–$20,000 of that.
+      You approve only what you want after Phase 1, which replaces these ranges with firm hours and a cap.
+    </p>
+  </section>
+
+  <footer>
+    This page is a shared snapshot of the engagement, updated as work progresses.
+    Questions any time: Russell Cole.
+  </footer>
+
+</div>
+</body>
+</html>
